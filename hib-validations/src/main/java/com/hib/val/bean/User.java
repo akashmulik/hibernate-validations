@@ -11,7 +11,8 @@ public class User {
 
 	@Size(min=2, max=5)
 	private String name;
-	@Email(message="akashhhh")
+	
+	@Email(message="Email not valid")
 	private String pass;
 	
 	public String getName() {
@@ -26,4 +27,14 @@ public class User {
 	public void setPass(String pass) {
 		this.pass = pass;
 	}
+	public User(String name, String pass) {
+		super();
+		this.name = name;
+		this.pass = pass;
+	}
+	
+	public User() {
+		super();
+	}
+	
 }
